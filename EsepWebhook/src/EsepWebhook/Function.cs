@@ -17,7 +17,7 @@ public class Function
     // / <param name="context"></param>
     // / <returns></returns>
 
-    public string FunctionHandler(string input, ILambdaContext context)
+    public string FunctionHandler(object input, ILambdaContext context)
     {
         //return input.ToUpper();
         dynamic json = JsonConvert.DeserializeObject<dynamic>(input.ToString());
